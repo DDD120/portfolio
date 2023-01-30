@@ -9,6 +9,10 @@ module.exports = {
       green: "#288C66",
       yellow: "#DDD120",
     },
+    fontFamily: {
+      scd: "S-CoreDream-4Regular",
+      lsy: "LeeSeoyun",
+    },
   },
   darkMode: "class",
   plugins: [],

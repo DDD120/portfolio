@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "LeeSeoyun";
+  src: local("LeeSeoyun"), url(@/assets/fonts/LeeSeoyun.woff2) format("woff2"),
+    url(@/assets/fonts/LeeSeoyun.woff) format("woff"),
+    url(@/assets/fonts/LeeSeoyun.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: local("S-CoreDream-4Regular"),
+    url(@/assets/fonts/SCDream4.woff2) format("woff2"),
+    url(@/assets/fonts/SCDream4.woff) format("woff"),
+    url(@/assets/fonts/SCDream4.ttf) format("truetype");
+}
+
 * {
   padding: 0;
   margin: 0;
