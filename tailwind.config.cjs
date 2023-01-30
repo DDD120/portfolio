@@ -2,12 +2,13 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
-    colors: {
-      white: "#F6F6F6",
-      black: "#222222",
-      green: "#288C66",
-      yellow: "#DDD120",
+    extend: {
+      colors: {
+        white: "#F6F6F6",
+        black: "#222222",
+        green: "#288C66",
+        yellow: "#DDD120",
+      },
     },
     fontFamily: {
       scd: "S-CoreDream-4Regular",

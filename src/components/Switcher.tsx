@@ -12,9 +12,13 @@ function Switcher() {
   };
 
   return (
-    <>
-      <DarkModeSwitch checked={isDark} onChange={handleChange} size={30} />
-    </>
+    <DarkModeSwitch
+      checked={isDark}
+      onChange={handleChange}
+      size={24}
+      sunColor={"#222222"}
+      moonColor={"#F6F6F6"}
+    />
   );
 }
 
