@@ -4,7 +4,7 @@ type ThemeState = "light" | "dark";
 
 function useTheme() {
   const [theme, setTheme] = useState<ThemeState>("light");
-  const inverseTheme: ThemeState = theme === "dark" ? "light" : "dark";
+  const inverseTheme = theme === "dark" ? "light" : "dark";
 
   useEffect(() => {
     const root = window.document.documentElement;
