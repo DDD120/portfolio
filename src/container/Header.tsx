@@ -2,7 +2,7 @@ import Switcher from "@components/Switcher";
 
 function Header() {
   return (
-    <header className="flex justify-between items-center h-12 px-8 font-lsy">
+    <header className="flex justify-between items-center h-12 px-8 font-lsy fixed top-0 w-full bg-white dark:bg-black">
       <h1 className="text-2xl">DDD120</h1>
       <div className="flex gap-4">
         <Switcher />
