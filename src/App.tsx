@@ -2,6 +2,7 @@ import Header from "@/container/Header";
 import Home from "@/container/Home";
 import AboutMe from "@/container/AboutMe";
 import Layout from "@components/Layout";
+import Skills from "@/container/Skills";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Layout>
         <Home />
         <AboutMe />
+        <Skills />
       </Layout>
     </div>
   );
