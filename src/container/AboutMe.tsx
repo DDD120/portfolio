@@ -3,7 +3,7 @@ import Heading from "@components/Heading";
 
 function AboutMe() {
   return (
-    <section className="flex flex-col items-center my-12">
+    <section id="aboutme" className="flex flex-col items-center my-12">
       <Heading>ABOUT ME</Heading>
       <div className="my-12 font-scd text-lg text-center">
         <p>"잘하고 싶은 욕심이 있습니다. 그래서 꾸준하게 노력합니다."</p>

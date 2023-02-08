@@ -33,7 +33,7 @@ function ArchivingItem({ name }: Props) {
     <a
       href={Archiving[name].link}
       target="_blank"
-      className="p-3 bg-white hover:brightness-90 rounded-xl w-24 transition-all dark:bg-black dark:hover:brightness-150"
+      className="p-3 bg-white hover:brightness-90 rounded-xl w-24 transition-[filter] dark:bg-black dark:hover:brightness-150"
     >
       <div className="flex flex-col items-center">
         <h3 className="text-xl font-lsy mb-2">{name}</h3>

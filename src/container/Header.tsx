@@ -2,7 +2,7 @@ import Switcher from "@components/Switcher";
 
 function Header() {
   return (
-    <header className="flex justify-between items-center h-12 px-8 font-lsy fixed top-0 w-full bg-white dark:bg-black">
+    <header className="z-10 flex justify-between items-center h-12 px-8 font-lsy fixed top-0 w-full bg-white dark:bg-black">
       <h1 className="text-2xl">DDD120</h1>
       <div className="flex gap-4">
         <Switcher />
@@ -12,7 +12,7 @@ function Header() {
               <a href="#home">HOME</a>
             </li>
             <li>
-              <a href="#about">ABOUT ME</a>
+              <a href="#aboutme">ABOUT ME</a>
             </li>
             <li>
               <a href="#skills">SKILLS</a>

@@ -20,7 +20,7 @@ const skills = [
 
 function Skills() {
   return (
-    <section className="flex flex-col items-center my-12">
+    <section id="skills" className="flex flex-col items-center my-12">
       <Heading>SKILLS</Heading>
       <div className="font-scd text-lg my-12 text-center">
         <p>시맨틱 마크업을 고려한 HTML 마크업</p>
@@ -36,7 +36,7 @@ function Skills() {
       </div>
       <div className="flex justify-center gap-2 flex-wrap w-96 mb-8">
         {skills.map((skill) => (
-          <SkillItem>{skill}</SkillItem>
+          <SkillItem key={skill}>{skill}</SkillItem>
         ))}
       </div>
     </section>
