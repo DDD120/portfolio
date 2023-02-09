@@ -22,19 +22,19 @@ function MovieRoom() {
           scrollbar={{ draggable: true }}
         >
           <SwiperSlide>
-            <img src={IMG1} alt="" />
+            <img src={IMG1} alt="Movie Room 메인 페이지" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={IMG2} alt="" />
+            <img src={IMG2} alt="Movie Room 영화 상세 페이지" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={IMG3} alt="" />
+            <img src={IMG3} alt="Movie Room 리뷰 쓰기 모달" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={IMG4} alt="" />
+            <img src={IMG4} alt="Movie Room 영화 검색 모달" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={IMG5} alt="" />
+            <img src={IMG5} alt="Movie Room My 페이지" />
           </SwiperSlide>
         </Swiper>
       </div>
