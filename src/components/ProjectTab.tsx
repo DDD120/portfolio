@@ -17,7 +17,7 @@ function ProjectTab() {
   };
 
   return (
-    <div className="max-w-[800px] w-[90%] flex flex-col font-scd my-12">
+    <div className="w-full flex flex-col font-scd my-12">
       <ul className="flex text-center mb-2">
         {projects.map((project, index) => (
           <li
