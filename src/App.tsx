@@ -8,7 +8,7 @@ import Interview from "./container/Interview";
 
 function App() {
   return (
-    <div className="bg-white h-full text-black dark:bg-black dark:text-white select-text selection:bg-yellow">
+    <div className="bg-white h-full text-black dark:bg-black dark:text-white selection:bg-yellow">
       <Header />
       <Layout>
         <Home />

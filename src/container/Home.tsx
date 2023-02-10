@@ -1,5 +1,6 @@
 import { ReactComponent as Circle } from "@/assets/images/home-circle.svg";
 import { ReactComponent as Heart } from "@/assets/images/home-heart.svg";
+import Avatar from "@/assets/images/home-avatar.gif";
 
 function Home() {
   return (
@@ -13,9 +14,11 @@ function Home() {
         </p>
         <p>웹 프론트엔드 개발자</p>
         <p>이수민입니다</p>
-        <Circle className="home-circle absolute -bottom-1 -left-1 w-28 h-14 " />
+        <Circle className="home-circle absolute -bottom-1 -left-1 w-28 h-14" />
       </div>
-      <div className="w-36 h-36 bg-gray-300 rounded-md"></div>
+      <div className="w-36 h-36 rounded-md overflow-hidden">
+        <img src={Avatar} alt="아바타" />
+      </div>
     </section>
   );
 }
