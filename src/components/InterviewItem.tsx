@@ -23,6 +23,7 @@ function InterviewItem({ question, children }: Props) {
         <Down
           width="24px"
           height="24px"
+          fill="#288C66"
           className={`${isShow && "rotate-180"}`}
         />
       </div>
