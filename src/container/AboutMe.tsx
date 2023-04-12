@@ -5,12 +5,10 @@ function AboutMe() {
   return (
     <section id="aboutme" className="flex flex-col items-center my-12">
       <Heading>ABOUT ME</Heading>
-      <div className="my-12 font-scd text-lg text-center">
-        <p>"잘하고 싶은 욕심이 있습니다. 그래서 꾸준하게 노력합니다."</p>
-
-        <p className="text-sm italic mt-12">
-          난 나의 보폭으로 갈게. <br /> 불안해 돌아보면서도 <br /> 별 큰일 없이
-          <br /> 지나온 언제나처럼. <br /> IU - unlucky
+      <div className="my-12 font-scd text-center">
+        <p className="italic text-3xl">"Do it, Draw it, Dream it."</p>
+        <p className="text-sm mt-6">
+          꾸준히 노력하고, 그리고, 꿈꾸면 이룰 수 있다고 믿습니다
         </p>
       </div>
       <div className="flex gap-2">
