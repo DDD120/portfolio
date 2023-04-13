@@ -50,7 +50,8 @@ function MovieRoom() {
         <div className="my-3">
           <a href="https://github.com/DDD120/movie-room" target="_blank">
             <p className="flex items-center gap-2">
-              <Link width="16px" height="16px" /> GitHub
+              <Link width="16px" height="16px" />
+              GitHub
             </p>
           </a>
           <a href="#" target="_blank">
