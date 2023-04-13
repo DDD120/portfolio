@@ -1,10 +1,12 @@
 import { useState } from "react";
 import MovieRoom from "./MovieRoom";
+import IdealIdea from "./IdealIdea";
 import Portfolio from "./Portfolio";
 import TurnOff from "./TurnOff";
 
 const projects = [
   { name: "MOVIE ROOM", content: <MovieRoom /> },
+  { name: "ideal idea", content: <IdealIdea /> },
   { name: "Turn Off", content: <TurnOff /> },
   { name: "Portfolio", content: <Portfolio /> },
 ];
