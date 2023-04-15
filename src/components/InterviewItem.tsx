@@ -28,7 +28,7 @@ function InterviewItem({ question, children }: Props) {
         />
       </div>
 
-      {isShow && <div className="mt-4 font-scd">{children}</div>}
+      {isShow && <div className="mt-4 font-scd max-sm:text-sm">{children}</div>}
     </div>
   );
 }

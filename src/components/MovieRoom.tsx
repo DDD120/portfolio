@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 function MovieRoom() {
   return (
     <div>
-      <div className="w-full">
+      <div className="w-full bg-red-100">
         <Swiper
           modules={[Navigation, Pagination]}
           slidesPerView="auto"
@@ -61,30 +61,32 @@ function MovieRoom() {
             </p>
           </a>
         </div>
-        <p>
-          시청하던 강의 영상에서 알게된 영화 API를 이용하여 나만의 영화 웹
-          서비스를 다시 만들어보고 싶어 제작하게 되었습니다.
-        </p>
-        <p>
-          <b>React hooks</b> 통한 함수 컴포넌트를 작성하였습니다.
-        </p>
-        <p>
-          <b>Redux Toolkit</b>을 이용하여 유저의 상태 관리 <b>RTK Query</b>를
-          사용한 Data fetching을 통해 서버 데이터를 관리하였습니다.
-        </p>
-        <p>
-          <b>Express</b>를 사용해 리뷰의 CRUD 기능을 구현하였고 <b>MongoDB</b>와
-          <b>Mongoose</b> 사용하여 스키마 생성 및 데이터 저장을 하였습니다.
-        </p>
-        <p>
-          <b>JWT</b>를 사용하여 쿠키에 토큰을 담아 보내는 형식으로 로그인 유지
-          기능을 구현하였습니다.
-        </p>
-        <p>
-          중간 졸업작품 병행과 시간에 쫓기지 않고 막히는 부분이 있을 때 그
-          개념을 확실하게 잡느라 제작한 시간은 다소 오래 걸렸고 그만큼 제일
-          애정가는 서비스입니다.
-        </p>
+        <div className="max-sm:text-sm">
+          <p>
+            시청하던 강의 영상에서 알게된 영화 API를 이용하여 나만의 영화 웹
+            서비스를 다시 만들어보고 싶어 제작하게 되었습니다.
+          </p>
+          <p>
+            <b>React hooks</b> 통한 함수 컴포넌트를 작성하였습니다.
+          </p>
+          <p>
+            <b>Redux Toolkit</b>을 이용하여 유저의 상태 관리 <b>RTK Query</b>를
+            사용한 Data fetching을 통해 서버 데이터를 관리하였습니다.
+          </p>
+          <p>
+            <b>Express</b>를 사용해 리뷰의 CRUD 기능을 구현하였고 <b>MongoDB</b>
+            와<b>Mongoose</b> 사용하여 스키마 생성 및 데이터 저장을 하였습니다.
+          </p>
+          <p>
+            <b>JWT</b>를 사용하여 쿠키에 토큰을 담아 보내는 형식으로 로그인 유지
+            기능을 구현하였습니다.
+          </p>
+          <p>
+            중간 졸업작품 병행과 시간에 쫓기지 않고 막히는 부분이 있을 때 그
+            개념을 확실하게 잡느라 제작한 시간은 다소 오래 걸렸고 그만큼 제일
+            애정가는 서비스입니다.
+          </p>
+        </div>
       </div>
     </div>
   );

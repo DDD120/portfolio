@@ -56,24 +56,26 @@ function TurnOff() {
             </p>
           </a>
         </div>
-        <p>졸업작품으로 제작된 인터랙티브 웹툰입니다.</p>
-        <p>
-          정적 사이트 생성 프레임워크인 <b>Gatsby</b>를 사용하였습니다. 그동안
-          주로 create-reat-app으로 개발환경을 구축한 저에게는 새로운
-          시도였습니다.
-        </p>
-        <p>
-          <b>framer-motion</b> 라이브러리를 사용하여 CSS animation을 쉽고
-          편리하게 구현하였습니다.
-        </p>
-        <p>
-          이미지가 많은 프로젝트임을 고려하여 Gatsby 플러그인인{" "}
-          <b>gatsby-plugin-image</b>를 사용하여 이미지 최적화를 하였습니다.
-        </p>
-        <p>
-          졸업작품 제출을 위해 <b>Electron</b>를 사용하여 데스크탑 앱을
-          만들었습니다.
-        </p>
+        <div className="max-sm:text-sm">
+          <p>졸업작품으로 제작된 인터랙티브 웹툰입니다.</p>
+          <p>
+            정적 사이트 생성 프레임워크인 <b>Gatsby</b>를 사용하였습니다. 그동안
+            주로 create-reat-app으로 개발환경을 구축한 저에게는 새로운
+            시도였습니다.
+          </p>
+          <p>
+            <b>framer-motion</b> 라이브러리를 사용하여 CSS animation을 쉽고
+            편리하게 구현하였습니다.
+          </p>
+          <p>
+            이미지가 많은 프로젝트임을 고려하여 Gatsby 플러그인인{" "}
+            <b>gatsby-plugin-image</b>를 사용하여 이미지 최적화를 하였습니다.
+          </p>
+          <p>
+            졸업작품 제출을 위해 <b>Electron</b>를 사용하여 데스크탑 앱을
+            만들었습니다.
+          </p>
+        </div>
       </div>
     </div>
   );

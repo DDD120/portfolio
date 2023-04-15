@@ -6,7 +6,7 @@ function Header() {
       <h1 className="text-2xl">DDD120</h1>
       <div className="flex gap-4">
         <Switcher />
-        <nav>
+        <nav className="max-sm:hidden">
           <ul className="flex gap-4">
             <li>
               <a href="#home">HOME</a>

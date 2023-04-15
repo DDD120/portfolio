@@ -20,7 +20,7 @@ function ProjectTab() {
 
   return (
     <div className="w-full flex flex-col font-scd my-12">
-      <ul className="flex text-center mb-2">
+      <ul className="flex text-center mb-2 max-sm:text-sm">
         {projects.map((project, index) => (
           <li
             className={`flex-1 p-4 cursor-pointer transition-[filter] bg-white hover:brightness-95 dark:bg-black dark:hover:brightness-200 ${
