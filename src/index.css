@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .link-underline {
+    @apply underline underline-offset-4 decoration-black/30 dark:decoration-white/30 transition hover:text-green hover:decoration-green/30 dark:hover:decoration-green/30;
+  }
+}
+
 @font-face {
   font-family: "LeeSeoyun";
   src: local("LeeSeoyun"), url(@/assets/fonts/LeeSeoyun.woff2) format("woff2"),
