@@ -28,7 +28,13 @@ function InterviewItem({ question, children }: Props) {
         />
       </div>
 
-      {isShow && <div className="mt-4 font-scd max-sm:text-sm">{children}</div>}
+      <div
+        className={`font-scd max-sm:text-sm transition-all origin-top ${
+          isShow ? "mt-4" : "h-0"
+        }`}
+      >
+        {isShow && children}
+      </div>
     </div>
   );
 }

@@ -30,7 +30,7 @@
 .home-circle {
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
-  animation: circle 2s 1s ease-in-out both;
+  animation: circle 2s 1.5s ease-out both;
 }
 
 @keyframes circle {
@@ -40,21 +40,5 @@
 
   100% {
     stroke-dashoffset: 0;
-  }
-}
-
-.home-heart {
-  animation: heart 1s ease-in both;
-}
-
-@keyframes heart {
-  0% {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
   }
 }

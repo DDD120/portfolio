@@ -36,7 +36,7 @@ function ProjectTemplate({ images, info, children }: Props) {
           scrollbar={{ draggable: true }}
         >
           {images.map((image) => (
-            <SwiperSlide>
+            <SwiperSlide key={image.src}>
               <img src={image.src} alt={image.alt} />
             </SwiperSlide>
           ))}

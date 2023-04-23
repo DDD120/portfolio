@@ -17,15 +17,13 @@ function ProjectTab() {
   const handleClick = (index: number) => {
     setSelect(index);
   };
-
+  //border-b-2 border-green
   return (
     <div className="w-full flex flex-col font-scd my-12">
-      <ul className="flex text-center mb-2 max-sm:text-sm">
+      <ul className="flex text-center max-sm:text-sm">
         {projects.map((project, index) => (
           <li
-            className={`flex-1 p-4 cursor-pointer transition-[filter] bg-white hover:brightness-95 dark:bg-black dark:hover:brightness-200 ${
-              select === index && "border-b-2 border-green"
-            }`}
+            className="flex-1 p-4 cursor-pointer transition-[filter] bg-white hover:brightness-95 dark:bg-black dark:hover:brightness-200"
             onClick={() => handleClick(index)}
             key={project.name}
           >
@@ -33,6 +31,11 @@ function ProjectTab() {
           </li>
         ))}
       </ul>
+      <div
+        className={`flex w-[25%] h-1 mb-2 bg-green transition translate-x-[${
+          select * 100
+        }%]`}
+      />
       <div>{projects[select].content}</div>
     </div>
   );
