@@ -4,7 +4,7 @@ import InterviewItem from "@components/InterviewItem";
 function Interview() {
   return (
     <div
-      id="interveiw"
+      id="interview"
       className="flex flex-col items-center my-12 max-w-[800px] w-[90%]"
     >
       <Heading>INTERVIEW</Heading>
