@@ -5,10 +5,10 @@ import Portfolio from "./Portfolio";
 import TurnOff from "./TurnOff";
 
 const projects = [
-  { name: "MOVIE ROOM", content: <MovieRoom /> },
-  { name: "ideal idea", content: <IdealIdea /> },
-  { name: "Turn Off", content: <TurnOff /> },
-  { name: "Portfolio", content: <Portfolio /> },
+  { id: 0, name: "MOVIE ROOM", content: <MovieRoom /> },
+  { id: 1, name: "ideal idea", content: <IdealIdea /> },
+  { id: 2, name: "Turn Off", content: <TurnOff /> },
+  { id: 3, name: "Portfolio", content: <Portfolio /> },
 ];
 
 function ProjectTab() {
@@ -17,20 +17,19 @@ function ProjectTab() {
   return (
     <div className="w-full flex flex-col font-scd my-12">
       <ul className="flex text-center max-sm:text-sm">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <li
             className="flex-1 p-4 cursor-pointer transition-[filter] bg-white hover:brightness-95 dark:bg-black dark:hover:brightness-200"
-            onClick={() => setSelect(index)}
-            key={project.name}
+            onClick={() => setSelect(project.id)}
+            key={project.id}
           >
             {project.name}
           </li>
         ))}
       </ul>
       <div
-        className={`w-[${
-          100 / projects.length
-        }%] h-1 mb-2 bg-green transition translate-x-[${select * 100}%]`}
+        className={`w-[25%] h-1 mb-2 bg-green rounded-md transition`}
+        style={{ transform: `translateX(${select * 100}%)` }}
       />
       <div>{projects[select].content}</div>
     </div>
