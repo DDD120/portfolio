@@ -10,7 +10,7 @@ function Home() {
     >
       <div className="relative">
         <p className="flex items-center">
-          안녕하세요! <Heart className="home-heart w-8 h-6" />
+          안녕하세요! <Heart className="animate-home-heart w-8 h-6" />
         </p>
         <p>웹 프론트엔드 개발자</p>
         <p>이수민입니다</p>
