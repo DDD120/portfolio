@@ -1,11 +1,4 @@
-import ProjectTemplate, { ProjectImages, ProjectInfo } from "./ProjectTemplate";
-import IMG1 from "@/assets/images/project-portfolio-1.png";
-import IMG2 from "@/assets/images/project-portfolio-2.png";
-
-const images: ProjectImages[] = [
-  { src: IMG1, alt: "Portfolio 화면" },
-  { src: IMG2, alt: "Portfolio 다크 모드 화면" },
-];
+import ProjectTemplate, { ProjectInfo } from "./ProjectTemplate"
 
 const info: ProjectInfo = {
   title: "Portfolio",
@@ -13,12 +6,12 @@ const info: ProjectInfo = {
   description: "포토폴리오 사이트",
   skills: ["React.js", "Tailwind CSS", "TypeScript"],
   githubUrl: "https://github.com/DDD120/portfolio",
-};
+}
 
-function Portfolio() {
+function Etc() {
   return (
-    <ProjectTemplate images={images} info={info}>
-      <p>포토폴리오 용으로 제작한 사이트입니다.</p>
+    <ProjectTemplate info={info}>
+      <p>현재 보고 있는 사이트입니다.</p>
       <p>
         빌드 도구인 <b>vite</b>를 사용하여 프로젝트를 생성 및 빌드하였습니다.
         기존의 많이 사용하던 웹팩과 비교하여 더 빠른 속도를 경험하였습니다.
@@ -32,7 +25,7 @@ function Portfolio() {
         최대한 내포할 수 있도록 구성하였습니다.
       </p>
     </ProjectTemplate>
-  );
+  )
 }
 
-export default Portfolio;
+export default Etc

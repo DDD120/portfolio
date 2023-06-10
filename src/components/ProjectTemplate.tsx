@@ -1,47 +1,49 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination } from "swiper"
+import "swiper/css"
+import "swiper/css/pagination"
 
 export interface ProjectImages {
-  src: string;
-  alt: string;
+  src: string
+  alt: string
 }
 
 export interface ProjectInfo {
-  title: string;
-  siteUrl: string;
-  description: string;
-  skills: string[];
-  githubUrl: string;
-  reviewUrl?: string;
+  title: string
+  siteUrl: string
+  description: string
+  skills: string[]
+  githubUrl: string
+  reviewUrl?: string
 }
 
 interface Props {
-  images: ProjectImages[];
-  info: ProjectInfo;
-  children: React.ReactNode;
+  images?: ProjectImages[]
+  info: ProjectInfo
+  children: React.ReactNode
 }
 
 function ProjectTemplate({ images, info, children }: Props) {
   return (
     <div>
-      <div className="w-full aspect-[1536/745]">
-        <Swiper
-          modules={[Navigation, Pagination]}
-          slidesPerView="auto"
-          navigation
-          loop
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-        >
-          {images.map((image) => (
-            <SwiperSlide key={image.src}>
-              <img src={image.src} alt={image.alt} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      {images && (
+        <div className="w-full aspect-[1536/745]">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            slidesPerView="auto"
+            navigation
+            loop
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+          >
+            {images.map((image) => (
+              <SwiperSlide key={image.src}>
+                <img src={image.src} alt={image.alt} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      )}
       <div className="my-4">
         <h2 className="flex items-center gap-2 text-2xl font-lsy mb-2 link-underline">
           <a href={info.siteUrl} target="_blank">
@@ -67,7 +69,7 @@ function ProjectTemplate({ images, info, children }: Props) {
         <div className="max-sm:text-sm">{children}</div>
       </div>
     </div>
-  );
+  )
 }
 
-export default ProjectTemplate;
+export default ProjectTemplate
