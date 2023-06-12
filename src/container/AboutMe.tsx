@@ -1,7 +1,7 @@
-import ArchivingItem from "@components/ArchivingItem";
-import Heading from "@components/Heading";
+import ArchivingItem from "@components/ArchivingItem"
+import Heading from "@components/Heading"
 
-const motto = '"Do it, Draw it, Dream it."'.split("");
+const motto = '"Do it, Draw it, Dream it."'.split("")
 
 function AboutMe() {
   return (
@@ -27,11 +27,11 @@ function AboutMe() {
       </div>
       <div className="flex gap-2">
         <ArchivingItem name="깃허브" />
-        <ArchivingItem name="티스토리" />
+        <ArchivingItem name="블로그" />
         <ArchivingItem name="이력서" />
       </div>
     </section>
-  );
+  )
 }
 
-export default AboutMe;
+export default AboutMe

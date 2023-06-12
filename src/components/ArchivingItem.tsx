@@ -1,16 +1,16 @@
-import { ReactComponent as Github } from "@/assets/images/aboutme-github.svg";
-import { ReactComponent as Tistory } from "@/assets/images/aboutme-tistory.svg";
-import { ReactComponent as Resume } from "@/assets/images/aboutme-resume.svg";
+import { ReactComponent as Github } from "@/assets/images/aboutme-github.svg"
+import { ReactComponent as Tistory } from "@/assets/images/aboutme-tistory.svg"
+import { ReactComponent as Resume } from "@/assets/images/aboutme-resume.svg"
 
 interface Props {
-  name: string;
+  name: string
 }
 
 interface ArchivingType {
   [key: string]: {
-    link: string;
-    icon: JSX.Element;
-  };
+    link: string
+    icon: JSX.Element
+  }
 }
 
 const Archiving: ArchivingType = {
@@ -18,7 +18,7 @@ const Archiving: ArchivingType = {
     link: "https://github.com/DDD120",
     icon: <Github className="w-8 h-8 fill-white" />,
   },
-  티스토리: {
+  블로그: {
     link: "https://ddd120.tistory.com/",
     icon: <Tistory className="w-8 h-8 fill-white" />,
   },
@@ -26,7 +26,7 @@ const Archiving: ArchivingType = {
     link: "",
     icon: <Resume className="w-7 h-7 fill-white" />,
   },
-};
+}
 
 function ArchivingItem({ name }: Props) {
   return (
@@ -42,7 +42,7 @@ function ArchivingItem({ name }: Props) {
         </div>
       </div>
     </a>
-  );
+  )
 }
 
-export default ArchivingItem;
+export default ArchivingItem
