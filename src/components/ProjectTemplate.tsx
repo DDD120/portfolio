@@ -45,7 +45,7 @@ function ProjectTemplate({ images, info, children }: Props) {
         </div>
       )}
       <div className="my-4">
-        <h2 className="flex items-center gap-2 text-2xl font-lsy mb-2 link-underline">
+        <h2 className="flex items-center gap-2 text-2xl font-lsy mb-2 link-underline font-bold">
           <a href={info.siteUrl} target="_blank">
             {info.title}
           </a>
