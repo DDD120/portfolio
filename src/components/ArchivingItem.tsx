@@ -23,7 +23,7 @@ const Archiving: ArchivingType = {
     icon: <Tistory className="w-8 h-8 fill-white" />,
   },
   이력서: {
-    link: "",
+    link: "https://drive.google.com/file/d/1_Djb3CCIrf8epYP2YsWAvWPAGwlc5NlV/view?usp=drive_link",
     icon: <Resume className="w-7 h-7 fill-white" />,
   },
 }
