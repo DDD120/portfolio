@@ -16,21 +16,20 @@ function ProjectTab() {
 
   return (
     <div className="w-full flex flex-col font-scd my-12">
-      <ul className="flex text-center max-sm:text-sm">
-        {projects.map((project) => (
-          <li
-            className="flex-1 p-4 cursor-pointer transition-[filter] bg-white dark:bg-black"
-            onClick={() => setSelect(project.id)}
-            key={project.id}
+      <div className="mb-5">
+        {projects.map(({ id, name }) => (
+          <span
+            className={`inline-flex rounded-lg py-2 px-4 cursor-pointer transition-[filter] bg-white dark:bg-black ${
+              select === id && "text-green bg-neutral-200 dark:bg-neutral-200"
+            }`}
+            onClick={() => setSelect(id)}
+            key={id}
           >
-            {project.name}
-          </li>
+            {name}
+          </span>
         ))}
-      </ul>
-      <div
-        className={`w-[25%] h-1 mb-2 bg-green rounded-md transition`}
-        style={{ transform: `translateX(${select * 100}%)` }}
-      />
+      </div>
+
       <div>{projects[select].content}</div>
     </div>
   )

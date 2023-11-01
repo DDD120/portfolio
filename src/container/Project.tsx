@@ -1,5 +1,5 @@
-import Heading from "@components/Heading";
-import ProjectTab from "@components/ProjectTab";
+import Heading from "@components/Heading"
+import ProjectTab from "@components/project/ProjectTab"
 
 function Project() {
   return (
@@ -10,7 +10,7 @@ function Project() {
       <Heading>PROJECT</Heading>
       <ProjectTab />
     </section>
-  );
+  )
 }
 
-export default Project;
+export default Project
