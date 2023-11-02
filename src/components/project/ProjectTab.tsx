@@ -3,12 +3,14 @@ import MovieRoom from "./MovieRoom"
 import IdealIdea from "./IdealIdea"
 import Etc from "./Etc"
 import TurnOff from "./TurnOff"
+import MafiaGMaster from "./MafiaGMaster"
 
 const projects = [
-  { id: 0, name: "MOVIE ROOM", content: <MovieRoom /> },
-  { id: 1, name: "ideal idea", content: <IdealIdea /> },
-  { id: 2, name: "Turn Off", content: <TurnOff /> },
-  { id: 3, name: "etc.", content: <Etc /> },
+  { id: 0, name: "마피아 G 마스터", content: <MafiaGMaster /> },
+  { id: 1, name: "MOVIE ROOM", content: <MovieRoom /> },
+  { id: 2, name: "ideal idea", content: <IdealIdea /> },
+  { id: 3, name: "Turn Off", content: <TurnOff /> },
+  { id: 4, name: "etc.", content: <Etc /> },
 ]
 
 function ProjectTab() {
